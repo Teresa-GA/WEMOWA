@@ -11,7 +11,7 @@ The goal of WEMOWA is to ...
 You can install the development version of WEMOWA like so:
 
 ``` r
-remotes::instal_github("Paqute.capacity/WEMOWA")
+remotes::instal_github("Teresa-GA/WEMOWA")
 ```
 
 ## Example
