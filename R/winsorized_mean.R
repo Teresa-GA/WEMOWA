@@ -20,8 +20,7 @@ winsorized_mean<- function (x,
             alpha = NULL, beta = alpha,
             w=NULL ,
             na.rm = FALSE,
-            ...)
-  {
+            ...){
 
     if (!is.numeric(x)) {
       warning("argument is not numeric: returning NA")
@@ -36,8 +35,8 @@ winsorized_mean<- function (x,
       if (any(c(alpha > 0.5, beta > 0.5, alpha < 0, beta < 0)))
         stop("the winsorized fraction must be between 0 and 0.5")
     if (isTRUE(na.rm)) {
-      x <- x[!is.na(x)]
       w <- w[!is.na(x)]
+      x <- x[!is.na(x)]
     }
     if (is.complex(x))
       stop("winsorized means are not defined for complex data")
@@ -47,12 +46,15 @@ winsorized_mean<- function (x,
 
     n <- length(x)
 
-    if (!is.numeric(r) || length(r) != 1L)
+    if (!is.numeric(r) || length(r) != 1L )
       stop("'r' must be numeric of length one")
     if (!is.numeric(s) || length(s) != 1L)
       stop("'s' must be numeric of length one")
     if (!is.null(alpha))  r <- floor(n * alpha) + 1
     if (!is.null(beta))   s <- floor(n * beta) + 1
+
+    if (r<0 || s<0)
+      stop("'r' and 's' must be positive numbers" )
 
     if (r > n/2 | s > n/2)
       stop("r and s must be less than half the length of x" )
