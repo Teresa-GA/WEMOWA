@@ -41,8 +41,7 @@ winsorized_mean<- function (x,
     if (is.complex(x))
       stop("winsorized means are not defined for complex data")
     if (anyNA(x))
-      return(NA_real_
-      )
+      return(NA_real_ )
 
     n <- length(x)
 
