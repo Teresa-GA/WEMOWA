@@ -1,20 +1,20 @@
-#' Shapley values for a winsorized weighted mean
+#' Shapley values associated with the (r,s)-fold Winsorized weighted mean
 #'
-#' @param n dimension of the vector to apply winsorized mean
-#' @param r An integer. The number of observations to be winsorized from the lower end of x before the mean is computed
-#' @param s An integer. The number of observations to be winsorized from the upper end of x before the mean is computed
-#' @param alpha The fraction (0 to 0.5) of observations to be winsorized from the lower end of x before the mean is computed
-#' @param beta The fraction (0 to 0.5) of observations to be winsorized from the upper end of x before the mean is computed
-#' @param w A numerical vector of weights the same length as x giving the weights to use for elements of x
+#' @param n A positive integer. It represents the dimension of the vector to apply winsorized mean
+#' @param r A positive integer. The number of observations to be winsorized from the lower end of x before the mean is computed
+#' @param s A positive integer. The number of observations to be winsorized from the upper end of x before the mean is computed
+#' @param alpha A real number between 0 and 0.5. It gives the proportion of observations to be winsorized from the lower end of x before the mean is computed
+#' @param beta A real number between 0 and 0.5. It gives the proportion of observations to be winsorized from the upper end of x before the mean is computed
+#' @param w A numerical vector of weights with the same length as x. It gives the weights to use in the Winsorized weighted mean
 #'
 #' @return The Shapley values for a winsorized weighted mean for a vecotor of length n computed using the arguments given
 #' @export
 #'
 #' @examples
 #' x<-1:20
-#' winsorized_mean(x,r=2)
-#' shapley_wm(n=20, r=2)
-shapley_wm<- function (n,
+#' winsorized_weighted_mean(x,r=2)
+#' Shapley_values_winsorized_weighed_mean(n=20, r=2)
+Shapley_values_winsorized_weighed_mean<- function (n,
                        r = 1,  s = r,
                        alpha = NULL, beta = alpha,
                        w=NULL){
