@@ -1,0 +1,25 @@
+#' students
+#'
+#' The Department of Mathematics in a Faculty of Economics offers a research assistantship
+#' for the students accepted into the M. Sc. in Economics. Applicants are evaluated
+#' with respect to seven subjects.
+#'
+#' This case was published as un illustrative example by
+#'Llamazares B. (2019). SUOWA operators: An analysis of their
+#'conjunctive/disjunctive character. FUZZY SETS AND
+#'SYSTEMS, 357(0), 117-134.
+#'
+#' @format ## `who`
+#' A data frame with 3 rows and 8 columns:
+#' \describe{
+#'   \item{Student}{ An identificator for each student}
+#'   \item{MatI}{Mark in Mathematics I}
+#'   \item{MatII}{Mark in Mathematics II}
+#'   \item{MatIII}{Mark in Mathematics III}
+#'   \item{StatI}{Mark in Statistics I}
+#'   \item{StatII}{Mark in Statistics II}
+#'   \item{EcoI}{Mark in Economics I}
+#'   \item{EcoII}{Mark in Economics II}
+#' }
+#' @source  https://doi.org/10.1016/j.fss.2018.05.009
+"students"
