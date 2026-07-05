@@ -7,7 +7,7 @@
 #' @param beta A real number between 0 and 0.5. It gives the proportion of observations to be winsorized from the upper end of x before the mean is computed
 #' @param weights A numerical vector of weights with the same length as x. It gives the weights to use in the Winsorized weighted mean
 #'
-#' @return A numeric vector giving the capacity corresponding to each subset de {1,2,..., n}
+#' @return A numeric vector giving the capacity corresponding to each subset  of the set formed from the numbers 1,2,..., n
 #' @export
 #'
 #' @examples

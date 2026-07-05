@@ -2,8 +2,7 @@ Package: WEMOWA
 Title: Generalization of weighted means and OWA operator: SUOWA and Semi-SUOWA operators
 Version: 0.0.0.9000
 Authors@R: 
-    person("Teresa", "Gonzalez-Arteaga", , "teresa.gonzalez.arteaga@uva.es", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+    person("Teresa", "Gonzalez-Arteaga", , "teresa.gonzalez.arteaga@uva.es", role = c("aut", "cre") )
 Description: What the package does (one paragraph).
 License: MIT + file LICENSE
 Encoding: UTF-8

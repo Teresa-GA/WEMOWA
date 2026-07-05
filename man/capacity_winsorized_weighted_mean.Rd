@@ -27,7 +27,7 @@ capacity_winsorized_weighted_mean(
 \item{weights}{A numerical vector of weights with the same length as x. It gives the weights to use in the Winsorized weighted mean}
 }
 \value{
-An object of class capacity.
+A numeric vector giving the capacity corresponding to each subset  of the set formed from the numbers 1,2,..., n
 }
 \description{
 The capacity (or fuzzy measure) associated with the (r,s)-fold Winsorized weighted mean
